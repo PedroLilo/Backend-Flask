@@ -63,8 +63,8 @@ def usuario_save():
 
 @app.route("/usuario/remove/<int:id>")
 def usuario_remove(id):
-    usuario = Usuario.query.get(id)
-    if usuario:
+    if id > 0:
+        usuario = Usuario.query.get(id)
         db.session.delete(usuario)
         db.session.commit()
         flash('Usuário removido com sucesso!')
