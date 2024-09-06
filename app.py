@@ -9,7 +9,7 @@ app.config['SECRET_KEY'] = '9ebe6f92407c97b3f989420e0e6bebcf9d1976b2e230acf9faf4
 
 # --> drive://usuario:senha@servidor/banco_de_dados
 
-conexao = "mysql+pymysql://alunos:cefetmg@127.0.0.1/FlaskGio"
+conexao = "mysql+pymysql://alunos:cefetmg@127.0.0.1/flaskg1"
 app.config['SQLALCHEMY_DATABASE_URI'] = conexao
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
